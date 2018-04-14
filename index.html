@@ -22,7 +22,7 @@
           { 
             if (XMLHttpRequestObject.readyState == 4 && 
               XMLHttpRequestObject.status == 200) { 
-                obj.innerHTML = XMLHttpRequestObject.responseText.replace(/gh/g, "<br>"); 
+                obj.innerHTML = XMLHttpRequestObject.responseText.replace(/\n/g, "<br>"); 
             } 
           } 
 
